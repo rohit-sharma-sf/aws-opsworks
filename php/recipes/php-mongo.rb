@@ -14,5 +14,5 @@ template 'mongo.ini' do
   owner 'root'
   group 'root'
   mode 0644
-  notifies :restart, resources(:service => 'httpd')
+  notifies :restart, resources(:service => 'apache2')
 end
