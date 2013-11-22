@@ -3,6 +3,6 @@ script "chmod_upload" do
   user "root"
   cwd "/"
   code <<-EOH
-  /bin/chmod [deploy_to]/uploads/ 0777
+  /bin/chmod 777 /srv/www/apibuzztala/uploads
   EOH
 end
